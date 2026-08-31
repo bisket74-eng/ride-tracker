@@ -1445,7 +1445,7 @@ margin-left:0 !important;
     );
 
     const map = L.map('map', { zoomControl:true }).setView([45.6387, -122.6615], 12);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_2ljx_1_c29d86b03ffd3083fe1d9647', {
         maxZoom:22,
         maxNativeZoom:19,
         attribution:'&copy; CartoDB'
@@ -7990,7 +7990,7 @@ if (exitLabel) exitLabel.innerText = "Exit Game";
 
     function createLayers() {
         if (!cartoLayer) {
-            cartoLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+            cartoLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_2ljx_1_c29d86b03ffd3083fe1d9647", {
                 maxZoom:22,
                 maxNativeZoom:19,
                 attribution:"&copy; CartoDB"
